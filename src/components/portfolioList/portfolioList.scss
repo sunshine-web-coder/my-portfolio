@@ -1,0 +1,19 @@
+@import "../../global.scss";
+
+.portfolioMenuList {
+    max-width: 300px;
+    .portfolioList {
+        font-size: 12px;
+        margin-right: 50px;
+        padding: 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+
+        &.active {
+            background-color: $mainColor;
+            color: #ffffff;
+        }
+    }
+}

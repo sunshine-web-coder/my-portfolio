@@ -1,0 +1,31 @@
+.slide-show #nextArrow, .slide-show #prevArrow {
+    /* top: 355px; */
+}
+
+#nextArrow, #prevArrow {
+    color: rgb(4, 17, 29) !important;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 232, 235);
+    font-size: 55px !important;
+    font-weight: 600 !important;
+    line-height: 22px !important;
+    cursor: pointer;
+    top: 120px;
+    z-index: 1;
+    padding: 20px;
+}
+
+#nextArrow {
+    right: -100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#prevArrow {
+    left: -100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+ 

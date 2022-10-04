@@ -1,0 +1,202 @@
+@import "../../global.scss";
+
+.banner {
+    background-color: #ffffff;
+    padding-left: 20px;
+    position: relative;
+    top: 80px;
+
+    .in-banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        gap: 20px;
+
+        @include banner {
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            padding-right: 20px;
+        }
+
+        @media (max-width: 1000px) {
+            padding-bottom: 20px;
+            top: 80px;
+        }
+
+        .left {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .wrapper {
+
+                .dHy {
+                    @include banner {
+                        text-align: center;
+                    }
+
+                    h1 {
+                        font-size: 60px;
+                        margin: 10px 0px;
+
+                        @media (max-width: 768px) {
+                            font-size: 40px;
+                        }
+                    }
+
+                    h2 {
+                        font-size: 35px;
+
+                        @include banner {
+                            text-align: center;
+
+                        }
+
+                        @media (max-width: 768px) {
+                            font-size: 30px;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 30px;
+                        display: flex;
+                        gap: 10px;
+
+                        @media (max-width: 768px) {
+                            font-size: 25px;
+                        }
+
+                        @media (max-width: 1170px) {
+                            flex-direction: column;
+                        }
+
+                        span {
+                            font-size: inherit;
+                            color: crimson;
+                            cursor: pointer;
+                            margin-top: 20px;
+
+                            @media (max-width: 768px) {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+
+                }
+
+
+
+                .downloadBox {
+                    margin-top: 30px;
+
+                    @include banner {
+                        text-align: center;
+                    }
+
+                    .readMoreBtn {
+                        padding: 10px;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        background-color: crimson;
+                        color: #ffffff;
+                        text-align: center;
+                        border-radius: 5px;
+                        border: none;
+                        max-width: 500px;
+                        height: 40px;
+                        cursor: pointer;
+                    }
+                }
+
+                .readMoreModalOverlay {
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background-image: linear-gradient(120deg, #15023ad0, #15023ad0);
+                    z-index: -9999;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.2s ease-in-out;
+                    transform: scale(0.8);
+                    opacity: 0;
+
+                    &.overlayAnime {
+                        opacity: 1;
+                        transform: scale(1);
+                        z-index: 9999;
+                    }
+                }
+
+                .socialBanner {
+                    margin-top: 30px;
+                    display: flex;
+                    gap: 15px;
+
+                    @media (max-width: 1000px) {
+                        align-content: center;
+                        justify-content: center;
+                    }
+
+                    a {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 100%;
+
+            @include banner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .imgContainer {
+                width: 600px;
+                min-height: 570px;
+                background-color: rgb(214, 94, 118);
+                border-radius: 50%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                float: right;
+                overflow: hidden;
+
+                @include banner {
+                    width: 500px;
+                    min-height: 500px;
+                }
+
+                img {
+                    width: 90%;
+                    position: relative;
+                    left: 30px;
+                }
+
+                @media (max-width: 768px) {
+                    max-width: 300px;
+                    min-height: 300px;
+
+                    img {
+                        left: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}

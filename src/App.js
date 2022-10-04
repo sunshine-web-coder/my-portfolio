@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import TopBar from "./components/topBar/TopBar";
+import "./App.css";
+import Header from "./components/header/Header";
+import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import Home from "./pages/home/Home";
+import Portfolio from "./pages/portfolio/Portfolio";
+import Contact from "./pages/contact/Contact";
+// import Testimonials from "./pages/testimonials/Testimonials";
+// import Works from "./pages/works/Works";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar />
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        {/* <Route path="/works" element={<Works />} /> */}
+        {/* <Route path="/testimonials" element={<Testimonials />} /> */}
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }

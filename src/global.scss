@@ -1,0 +1,9 @@
+$mainColor: #15023a;
+
+$width: 1000px;
+
+@mixin banner {
+    @media (max-width: 1000px) {
+        @content
+    }
+}

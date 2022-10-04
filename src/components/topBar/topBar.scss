@@ -1,0 +1,43 @@
+@import "../../global.scss";
+
+.TopBar {
+    min-height: 40px;
+    // background-color: rgb(218, 183, 190);
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $mainColor;
+    border-bottom: 1px solid rgb(233, 232, 232);
+    display: none;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        gap: 20px;
+        display: none;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        span {
+            font-style: 15px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}

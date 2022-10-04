@@ -1,0 +1,106 @@
+@import "../../global.scss";
+
+.portfolio {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 65px;
+    padding-bottom: 30px;
+
+    .in-Portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+
+        .title {
+            text-align: center;
+            margin-top: 30px;
+
+            h1 {
+                font-size: 50px;
+            }
+        }
+
+
+
+        ul {
+            margin: 10px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+
+            .item {
+                width: 320px;
+                height: 200px;
+                border-radius: 20px;
+                border: 1px solid rgb(240, 239, 239);
+                margin: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ffffff;
+                position: relative;
+                transition: all .5s ease;
+                overflow: hidden;
+                cursor: pointer;
+
+                h3 {
+                    position: absolute;
+                    font-size: 20px;
+                    text-align: center;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 1;
+                }
+
+                &:hover {
+                    background-color: $mainColor;
+
+                    img {
+                        opacity: 0.2;
+                        z-index: 0;
+                    }
+                }
+
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+
+
+}

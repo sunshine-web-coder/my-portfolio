@@ -1,0 +1,143 @@
+@import "../../global.scss";
+
+.readMoreModalBox {
+    color: $mainColor;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    max-width: 650px;
+
+    .in-readMoreModalBox {
+        height: 600px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin: auto;
+        overflow-x: auto;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .name {
+            margin-bottom: 20px;
+            h1 {
+                font-size: 30px;
+                margin: 0;
+            }
+
+            p {
+                color: rgb(75, 75, 75);
+            }
+        }
+
+        .NMnh {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+
+            .profile {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .njdhuY {
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                h3 {
+                    margin-bottom: 10px;
+                }
+
+                strong {
+                    font-size: 15px;
+                }
+
+                .date {
+                    font-size: 13px;
+                }
+
+                ul {
+                    margin-top: 10px;
+
+                    li {
+                        list-style: circle;
+                    }
+                }
+
+                .modalSocial {
+
+                    a {
+                        color: $mainColor;
+                    }
+
+                    .sIcon {
+                        font-size: 20px;
+                        margin: 5px;
+                        margin-left: 0;
+                    }
+                }
+
+            }
+        }
+
+        .title {
+            margin-bottom: 10px;
+
+            h3 {
+                font-size: 20px;
+                margin: 0;
+                position: relative;
+                display: flex;
+                gap: 2px;
+            }
+        }
+
+        p {
+            color: rgb(75, 75, 75);
+            max-width: 500px;
+
+            &:last-child {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .closeIcon {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        padding: 2px;
+        border-radius: 50%;
+        background-color: $mainColor;
+        color: #ffffff;
+        opacity: .7;
+        transition: all 0.5s ease;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .9;
+        }
+    }
+
+    hr{
+        border: 1px solid #15023a2c;
+    }
+}
