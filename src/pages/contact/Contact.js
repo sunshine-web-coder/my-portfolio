@@ -1,9 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import shakeSvg from "../../assets/contact.png";
-import { useForm } from "react-hook-form";
 import CloseIcon from "@mui/icons-material/Close";
 import emailjs from "@emailjs/browser";
-// import dot
 import "./contact.scss";
 
 export default function Contact() {
