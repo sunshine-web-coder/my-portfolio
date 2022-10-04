@@ -1,6 +1,6 @@
 import useTypewriter from "react-typewriter-hook";
 import { useEffect, useRef, useState } from "react";
-// import bannerImg from "../../assets/man.png";
+import pdfD from "../../assets/cv.pdf";
 import bannerImg from "../../assets/Developer-activity-bro.svg";
 // import EmailIcon from "@mui/icons-material/Email";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -36,7 +36,7 @@ export default function Banner() {
         <div className="left">
           <div className="wrapper">
             <div className="dHy">
-              <h2>Hi There, I'm </h2>
+              <h2>Hi &#128075;, I'm </h2>
               <h1>Fajuyagbe Ezekiel</h1>
               <h3>
                 Frontend Web Developer{" "}
