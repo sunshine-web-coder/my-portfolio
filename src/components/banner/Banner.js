@@ -1,6 +1,5 @@
 import useTypewriter from "react-typewriter-hook";
 import { useEffect, useRef, useState } from "react";
-import pdfD from "../../assets/cv.pdf";
 import bannerImg from "../../assets/Developer-activity-bro.svg";
 // import EmailIcon from "@mui/icons-material/Email";
 import TwitterIcon from "@mui/icons-material/Twitter";
