@@ -80,7 +80,7 @@ export default function Contact() {
           <img src={shakeSvg} alt="shakeSvg" />
         </div>
         <div className="right">
-          <h2>Contact Me.</h2>
+          <h2>Hire Me.</h2>
           <p>I promise to get back as soon as possible :)</p>
           <form ref={form} onSubmit={submitForm}>
             <span className={"errorMsg " + (error && "errorMsgOpen")}>
@@ -116,7 +116,7 @@ export default function Contact() {
               onChange={inputEvent}
               placeholder="Message"
             ></textarea>
-            <input type="submit" className="submitBtn" value="Send" />
+            <input type="submit" className="submitBtn" value="Hire Me" />
             <div className={"overlay " + (message && "overlayAnime")}>
               <div className="successMsg">
                 <CloseIcon
