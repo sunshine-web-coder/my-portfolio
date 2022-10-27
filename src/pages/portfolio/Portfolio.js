@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import {
   featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
+  // webPortfolio,
+  // mobilePortfolio,
+  // designPortfolio,
+  // contentPortfolio,
 } from "../../data";
 // import PortfolioList from "../../components/portfolioList/PortfolioList";
 import "./portfolio.scss";
@@ -40,18 +40,18 @@ export default function Portfolio() {
     switch (selected) {
       case "featured":
         setData(featuredPortfolio);
-        break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
+      //   break;
+      // case "web":
+      //   setData(webPortfolio);
+      //   break;
+      // case "mobile":
+      //   setData(mobilePortfolio);
+      //   break;
+      // case "design":
+      //   setData(designPortfolio);
+      //   break;
+      // case "content":
+      //   setData(contentPortfolio);
         break;
       default:
         setData(featuredPortfolio);
