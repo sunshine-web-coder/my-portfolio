@@ -6,7 +6,7 @@ export const featuredPortfolio = [
     img: "https://iili.io/bJwnyl.md.png",
     tool: "React JS",
     icon: <LinkIcon />,
-    url: "https://doc-qroni.netlify.app/",
+    url: "https://ipsumc.netlify.app/",
   },
   {
     title: "QroniSwap Documentation",
